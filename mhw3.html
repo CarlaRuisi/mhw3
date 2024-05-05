@@ -1,0 +1,500 @@
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1">
+        <title>Spotify Premium</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="mhw3.css">
+        <script src="mhw3.js" defer></script>
+        <script src="mhw3-api.js" defer></script>
+    </head>
+<body>
+    <header class="header_intestazione">
+        <div class="header_intestazione-items">
+         <span id="header_intestazione-items-logo">
+             <a href="">
+                 <img id="imgdevice" src="immagini/Spotify.png">
+                 <img id="imgsfondo" src="immagini/Spotify-mobile.png">
+             </a>
+         </span>
+         <nav id="header_intestazione-items-navigazione"> 
+           <div id="header_intestazione-items-navigazione-flex">
+           <a  id="Premium" data-index="5" href="">Premium</a>
+           <a  id="Assiztenza" data-index="4" href="">Assistenza</a>
+           <a  id="Scarica" data-index="3" href="">Scarica</a>
+           <div>|</div>
+           <a  data-index="2" id="Iscriviti"class="header_intestazione-items-navigazione-flex-scritta" href="">Iscrivi</a>
+           <a  data-index="1"id="accedi" class="header_intestazione-items-navigazione-flex-scritta" href="">Accedi</a>
+           </div>
+          </nav>
+         <div id="header_intestazione-items-navigazione-mobile">
+           <div></div>
+           <div></div>
+           <div></div>  
+         </div>
+         </div> 
+         <div  class="hidden" id="menu-tendina">
+          <ul  class="hidden"id="menu-tendina-premium" data-index="5">
+            <li>Costo</li>
+            <li>Cosa avrai in più?</li>
+          </ul>
+          <ul  class="hidden" id="menu-tendina-assistenza" data-index="4">
+            <li>Contattaci</li>
+            <li>Email </li>
+            <li>Indirizzo</li>
+          </ul>
+          <ul class="hidden" id="menu-tendina-scarica" data-index="3">
+            <li>Download</li>
+          </ul>
+          <ul class="hidden" id="menu-tendina-iscriviti" data-index="2">
+            <li>Indirizzo email</br>
+              <textarea></textarea>
+            </li>
+            <li>Password</br>
+              <textarea></textarea>
+            </li>
+          </ul>
+         <ul class="hidden" id="menu-tendina-accedi" data-index="1">
+          <li>Indirizzo email</br>
+            <textarea></textarea>
+          </li>
+          <li>Password</br>
+            <textarea></textarea>
+          </li>
+        </ul>
+        </div>
+       </header>
+       <nav class="Contenuto">
+        </section>
+        <section class="sector-blocco1">
+         <div id="section-blocco1-sfondo">
+          <div id="sector-blocco1-flex-container">
+            <div id="sector-blocco1-flex-container-box">
+              <div id="box1">
+                  <header id="header-box1">
+                      <h1>Ascolta senza limiti.Prova 1 mese di Premium Individual gratis.</h1>
+                      <h2>Dopo solo 10,99 &euro;/mese. Annulla quando vuoi</h2>
+                  </header>
+                  <div id="content-box1">
+                    <div id=content-box1-link>
+                    <button class=content-box1-link1 id="link1">
+                      <a href="">
+                        <span id="link1-inizio">Prova Gratis Per un Mese</span>
+                      </a>
+                    </button>
+                      <button class="content-box1-link1" id=link2>
+                      <a href="">
+                        <span>
+                          Visualizza tutti i piani
+                        </span>
+                      </a>
+                      </button>
+                    </div>
+                  </div>
+                  <p id="content-box1-p">
+                    Gratis per un mese, poi a soli 10,99 &euro;/mese.Offerta disponibile solo se non hai ancora provato Premium.
+                    <a href="">Si applicano termini e condizioni </a>
+                  </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="API">
+          <div id="API-contenitor_form">
+            <form class="form_context">
+              <h1>Prova ora!</h1>
+              <label>Inserisci l'artista o l'album:</br></label>
+              <input type="text" id="valore">
+              <select id="val">
+                <option value="artista">Artista</option>
+                <option value="album">Album</option>
+                <option value="song">Song</option>
+              </select>
+              <input type="submit" id="invio">
+            </form>
+          </div>
+          <div id="Result_API">
+            <div id="Album_Artisti"></div>
+            <div id="Song_Genius">
+          </div>
+          </section>
+        <section class="section-blocco2">
+          <div id="blocco2-container">
+           <div id="blocco2-container-contenuto">
+             <header id="titolo-blocco2-container-contenuto">
+               <h2>Sperimenta la differenza</h2>
+               <h3> Passa a premium e approffitta del pieno controllo della musica che ascolti. Annulla quando vuoi</h3>
+             </header>
+             <div id="tabella-blocco2-container-contenuto">
+                <div class="tabella-intestazione-box" id="id1">
+                     <div class="tabella-contenuto" id="colonna1">
+                        <p id="titolo">Cosa otterai</p>
+                      </div>
+                      <div class="tabella-contenuto">
+                        <p id="Piano">Piano Gratuito di Spotify
+                        </p>
+                      </div>
+                      <div class="tabella-contenuto"id="id-immagine">
+                        <p id="Premium">Premium</p>
+                      </div>
+                </div> 
+                <div class="tabella-intestazione-box" id="id2">
+                     <div class="tabella-contenuto " id="colonna1">
+                      <div class="scritta">
+                     <a href="">Musica senza pubblicità</a>
+                    </div>
+                     </div>
+                     <div class="tabella-contenuto" id="colonna2"><h1>-</h1></div>
+                     <div class="tabella-contenuto"id="id-immagine">
+                        <div class="immagine-blocco2"  >
+                          <img class='immagine-verificato' src="immagini/foto5.png">
+                     </div>
+                   </div>
+                </div>
+                <div class="tabella-intestazione-box" id="id2">
+                  <div class="tabella-contenuto" id="colonna1">
+                    <div class="scritta">
+                   <a>Scarica per ascoltare il modalità offline</a>
+                  </div>
+                   </div>
+                   <div class="tabella-contenuto" id="colonna2"><h1>-</h1></div>
+                   <div class="tabella-contenuto" id="id-immagine">
+                      <div class="immagine-blocco2"  >
+                        <img class='immagine-verificato' src="immagini/foto5.png">
+                   </div>
+                 </div>
+             </div>
+                 <div class="tabella-intestazione-box" id="id2">
+                  <div class="tabella-contenuto" id="colonna1">
+                    <div class="scritta">
+                   <a href="">Riproduci i brani in qualsiasi ordine</a>
+                  </div>
+                   </div>
+                   <div class="tabella-contenuto" id="colonna2"><h1>-</h1></div>
+                   <div class="tabella-contenuto" id="id-immagine">
+                      <div class="immagine-blocco2"  >
+                        <img class='immagine-verificato'src="immagini/foto5.png">
+                   </div>
+                 </div>
+            </div>
+            <div class="tabella-intestazione-box" id="id2">
+              <div class="tabella-contenuto" id="colonna1">
+                <div class="scritta">
+               <a href="">Qualità audio elevata</a>
+              </div>
+               </div>
+               <div class="tabella-contenuto" id="colonna2"><h1>-</h1></div>
+               <div class="tabella-contenuto" id="id-immagine">
+                  <div class="immagine-blocco2">
+                    <img class='immagine-verificato' src="immagini/foto5.png">
+               </div>
+             </div>
+          </div>
+          <div class="tabella-intestazione-box" id="id2">
+            <div class="tabella-contenuto" id="colonna1">
+              <div class="scritta">
+             <a href="">Ascolta con gli amici in tempo reale</a>
+            </div>
+             </div>
+             <div class="tabella-contenuto" id="colonna2"><h1>-</h1></div>
+             <div class="tabella-contenuto" id="id-immagine">
+                <div class="immagine-blocco2">
+                  <img class='immagine-verificato' src="immagini/foto5.png">
+                </div>
+             </div>
+           </div>
+        <div class="tabella-intestazione-box" id="id2">
+          <div class="tabella-contenuto" id="colonna1">
+            <div class="scritta">
+           <a href="">Organizza la coda di ascolto</a>
+          </div>
+           </div>
+           <div class="tabella-contenuto" id="colonna2"><h1>-</h1></div>
+           <div class="tabella-contenuto" id="id-immagine">
+              <div class="immagine-blocco2">
+                <img class='immagine-verificato' src="immagini/foto5.png">
+           </div>
+          </div>   
+        </div>  
+           </div> 
+          </div>
+          </div>
+        </section>
+        <section class="section-blocco3">
+          <section class="section-blocco3-container">
+            <h2> Piano convenienti per ogni situazione</h2>
+            <h3 id="section-blocco3-container-scritta">Scegliere un piano premium e ascolta la musica senza pubblicità,senza limiti tramite telefono, altroparlante e altri dispositivi.Paga in vari modi.Annulla quando vuoi</h3>
+            <div id="pagamento">
+              <div id="pagamento-flex">
+              <div class="icona" id="visa"></div>
+              <div class="icona" id="mastercard"></div>
+              <div class="icona" id="american"></div>
+              <div class="icona" id="poste"></div>
+              <div class="icona" id="paypal"></div>
+            </div>
+            </div>
+            <section id="section-blocco3-container-flex">
+              <button class="colore">Tutti i piani Premium includono</button>
+              <ul id="Lista" class="hidden">
+                <il class="Lista-contenuto">
+                  <div class="verificato"></div>
+                  <h4>Musica senza pubblicità</h4> 
+                </il>
+                <il class="Lista-contenuto">
+                  <div class="verificato"></div>
+                  <h4>Scarica per ascoltare il modalità offline</h4> 
+                </il> 
+                <il class="Lista-contenuto">
+                  <div class="verificato"></div>
+                  <h4>Riproduci i brani in qualsiasi ordine</h4> 
+                </il>
+                <il class="Lista-contenuto">
+                  <div class="verificato"></div>
+                  <h4>Qualità audio elevata</h4> 
+                </il>
+                <il class="Lista-contenuto">
+                  <div class="verificato"></div>
+                  <h4>Ascolta con gli amici in tempo reale</h4> 
+                </il>
+                <il class="Lista-contenuto">
+                  <div class="verificato"></div>
+                  <h4>Organizza la coda di ascolto</h4> 
+                </il> 
+              </ul>
+             <div class="bottone-return"></div>
+          </section>
+        </section>
+        </section>
+        <section class="section-blocco4">
+          <div id="section-blocco4-container">
+           <div id="section-blocco4-container-flex">
+                <div class="flex-blocco4-container-flex-dimensione">
+                <div class="flex-blocco4-blocco">
+                  <header class="flex-blocco4-intestazione">
+                    <div class="flex-blocco4-intestazione-1">
+                      <span>Gratis per un mese</span>
+                    </div>
+                  </header>
+                    <div class="flex-blocco4-intestazione-2">
+                      <div id="logo">
+                         <h2>Premium</h2>
+                      </div>
+                      <h3>Individual</h3>
+                      <p>Gratis per un mese</p>
+                      <p>Dopo 10,99 &euro;/mese</p>
+                      <hr>
+                    </div>
+                    <div class="flex-blocco4-intestazione-3">
+                      <ul>
+                         <li>1 account premium</li>
+                         <li>Annulla quando vuoi</li>
+                      </ul>
+                    </div>
+                    <div class="flex-blocco4-intestazione-4">
+                      <button class="content-box1-link1" id="link1" data-numero="1" data-spazio="1"><span>Prova 1 mese gratis</span></button>
+                      </div>
+                    <div class="flex-blocco4-intestazione-5">
+                        Gratis per 1 mese, poi a soli 10,99 &euro;/mese.Offerta disponibile solo se ancora non hai provato Premium.
+                        <a href="">Si applicano termini e condizioni</a>
+                      </div> 
+                    </div>
+                <div class="flex-blocco4-blocco">
+                     <header class="flex-blocco4-intestazione" id="lilla">
+                    <div class="flex-blocco4-intestazione-1">
+                      <span>Gratis per un mese</span>
+                    </div>
+                  </header>
+                    <div class="flex-blocco4-intestazione-2">
+                      <div id="logo">
+                         <h2>Premium</h2>
+                      </div>
+                      <h3 id="blocco2-scritta">Student</h3>
+                      <p>Gratis per un mese</p>
+                      <p>Dopo 5,99 &euro;/mese</p>
+                      <hr>
+                    </div>
+                    <div class="flex-blocco4-intestazione-3">
+                      <ul>
+                         <li>1 account premium</li>
+                         <li>Sconto per gli studenti idone</li>
+                         <li>Annulla quando vuoi</li>
+                      </ul>
+                    </div>
+                      <div class="flex-blocco4-intestazione-4">
+                          <button class="content-box1-link1" id="link1" data-numero="1" data-color="lilla"><span>Prova 1 mese gratis</span></button>
+                       </div>
+                      <div class="flex-blocco4-intestazione-5">
+                        <p>Gratis per 1 mese, poi 5,99 € al mese. Premium Student: offerta disponibile solo per studenti iscritti presso istituti di studi superiori accreditati e che si iscrivono a Premium per la prima volta. L'abbonamento è valido per 12 mesi, dopo di che passa automaticamente a Premium Individual a 10,99 € al mese. Puoi rinnovare l'abbonamento verificando nuovamente il tuo stato di studente. Sono consentiti al massimo 3 rinnovi, poi l'abbonamento passa automaticamente a Premium Individual. 
+                        <a href="">Si applicano termini e condizioni</a></p>
+                      </div> 
+                </div>
+                <div class="flex-blocco4-blocco">
+                  <header class="flex-blocco4-intestazione" id="grigio">
+                  </header>
+                    <div class="flex-blocco4-intestazione-2">
+                      <div id="logo">
+                         <h2>Premium</h2>
+                      </div>
+                      <h3 id="blocco3">Duo</h3>
+                      <p id="scritta-blocco3">Dopo 14,99 &euro;/mese</p>
+                      <hr>
+                    </div>
+                    <div class="flex-blocco4-intestazione-3">
+                      <ul>
+                         <li>2 account premium</li>
+                         <li>Annulla quando vuoi</li>
+                      </ul>
+                    </div>
+                    <div class="flex-blocco4-intestazione-4">
+                      <button class="content-box1-link1" id="link1" data-numero="1" data-color="giallo"><span>Prova 1 mese gratis</span></button>
+                      </div>
+                      <div class="flex-blocco4-intestazione-5">
+                        Per le coppie che risiedono allo stesso indirizzo. 
+                        <a href="">Si applicano termini e condizioni</a>
+                      </div> 
+                 </div>
+              </div>
+            </div>
+          </div>
+         </section>
+         <section class="section-blocco5">
+          <div class="section-blocco5-container">
+            <h2>Hai domande?</h2>
+            <p>Abbiamo noi le risposte</p>
+            <p>Trova le risposte alle domande  <a href="">qui</a></p>
+            <ul>
+              <li>
+                <div class="section-blocco5-container-lista">
+                  Come funziona il periodo di prova di Spotify Premium?
+                  <img data-index="1" src="immagini/freccia.png">
+                  </div>
+              </li>
+              <div class="hidden" id="casellainfo" data-index="1">
+                <p>Se non hai mai avuto Premium prima d'ora, potresti avere diritto a un periodo di prova gratuito (o a una tariffa ridotta).  </br></br>
+
+                Per i periodi di prova, devi comunque inserire un metodo di pagamento valido per iscriverti. Lo utilizzeremo per confermare il tuo Paese o la tua regione ed effettuare i pagamenti qualora decidessi di tenere Premium al termine dell'offerta.</br></br>
+                
+                Ti invieremo un promemoria 7 giorni prima del termine del periodo di prova. Si applicano termini e condizioni e restrizioni in base al Paese.</p>
+              </div>
+              <li>
+                <div class="section-blocco5-container-lista">
+                  Come posso annullare il mio piano Premium?
+                  <img data-index="2" src="immagini/freccia.png">
+                </div>
+              </li>
+              <div class="hidden" id="casellainfo" data-index="2">
+                <p>Puoi facilmente annullare il piano Premium quando vuoi sulla pagina del tuo account. Premium sarà attivo fino alla prossima data di fatturazione, quindi il tuo account passerà al piano gratuito</br></br>
+                
+                  Quando il tuo account passerà alla versione gratuita, manterrai tutte le tue playlist e la musica salvata e potrai ascoltarle con gli annunci.</p>
+              </div>
+              <li>
+                <div class="section-blocco5-container-lista">
+                  Come funziona il piano Spotify Duo?
+                  <img data-index="3" src="immagini/freccia.png">
+                </div>
+              </li>
+              <div class="hidden" id="casellainfo" data-index="3">
+                <p>Premium Duo è un piano per coppie che vivono insieme. È più conveniente rispetto a due account Premium Individual a prezzo pieno. Ti chiederemo l'indirizzo per assicurarci che risiediate nello stesso luogo. Puoi invitare una persona al piano subito dopo l'acquisto. Ogni membro dispone di un account Premium separato e può ascoltare musica contemporaneamente con il proprio account. Tutta la musica e tutte le playlist salvate sono di proprietà dei singoli membri. L'altro intestatario dell'account non può vedere ciò che stai ascoltando.</p>
+              </div>
+              <li>
+                <div class="section-blocco5-container-lista">
+                  Come funziona il piano Spotify Family?
+                  <img data-index="4"src="immagini/freccia.png">
+                </div>
+              </li>
+              <div class="hidden" id="casellainfo" data-index="4">
+                <p>Premium Family è un piano per un massimo di 6 persone che vivono insieme. È più conveniente rispetto a un account Premium Individual a prezzo pieno per ciascuno. Ti chiederemo l'indirizzo per avere la conferma che risiediate nello stesso luogo. Potrai invitare le persone al piano subito dopo l'acquisto. Ogni membro dispone di un account Premium separato e può ascoltare musica contemporaneamente con il proprio account. Tutta la musica e tutte le playlist salvate sono di proprietà dei singoli membri. Gli altri intestatari dell'account non possono vedere ciò che stai ascoltando.</p>
+              </div>
+              <li>
+                <div class="section-blocco5-container-lista">
+                  Come funziona il piano Spotify Student?
+                  <img data-index="5"src="immagini/freccia.png">
+                </div>
+              </li>
+              <div class="hidden" id="casellainfo" data-index="5">
+                <p>Premium Family è un piano per un massimo di 6 persone che vivono insieme. È più conveniente rispetto a un account Premium Individual a prezzo pieno per ciascuno. Ti chiederemo l'indirizzo per avere la conferma che risiediate nello stesso luogo. Potrai invitare le persone al piano subito dopo l'acquisto. Ogni membro dispone di un account Premium separato e può ascoltare musica contemporaneamente con il proprio account. Tutta la musica e tutte le playlist salvate sono di proprietà dei singoli membri. Gli altri intestatari dell'account non possono vedere ciò che stai ascoltando.</p>
+              </div>
+              <li>
+                <div class="section-blocco5-container-lista">
+                  Quanto costa Spotify Premium in italia?
+                  <img data-index="6"src="immagini/freccia.png">
+                </div>
+              </li>
+              <div class="hidden" id="casellainfo" data-index="6">
+                <p>I prezzi di Spotify Premium in questo Paese (Italia) sono diversi a seconda del piano Premium scelto: il piano Spotify Premium Individual costa 10,99 € al mese, il piano Premium Duo costa 14,99 € al mese, il piano Premium Family costa 17,99 € al mese e il piano Premium Student costa 5,99 € al mese. Se non hai mai avuto un piano Premium prima d'ora, potresti avere diritto a un periodo di prova gratuito (o a una tariffa ridotta). Si applicano termini e condizioni e restrizioni in base al Paese.</p>
+              </div>
+            </ul>
+          </div>
+         </section>
+         <footer class="footer-blocco">
+          <div class="footer-blocco-conteiner">
+            <nav id="footer-blocco-conteiner-nav">
+              <div id="footer-blocco-conteiner-nav-1">
+                <div id="footer-blocco-conteiner-nav-1-box1">
+                  <img src="immagini/Spotify.png">
+                </div>
+                <div id="footer-blocco-conteiner-nav-1-box2">
+                  <div class="footer-blocco-conteiner-nav-1-box2-content">
+                    <ul>
+                      <h2>AZIENDA</h2>
+                      <li><a>Chi siamo</a></li>
+                      <li><a>Opportunità di lavoro</a></li>
+                      <li></a>For the record</p></li>
+                    </ul>
+                  </div>
+                  <div class="footer-blocco-conteiner-nav-1-box2-content">
+                    <ul>
+                      <h2>COMMUNITY</h2>
+                      <li><a>Per artisti</a></li>
+                      <li><a>Sviluppatori</a></li>
+                      <li><a>pubblicità</a></li>
+                      <li><a>Investitori</a></li>
+                      <li><a>Venditori</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-blocco-conteiner-nav-1-box2-content">
+                    <ul>
+                      <h2>LINK UTILI</h2>
+                      <li><a>Assistenza</a></li>
+                      <li><a>Lettore Web</a></li>
+                      <li><a>App per cellulare gratuita</a></li>
+                      <li><a>Diritti del consumatore</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="footer-blocco-conteiner-nav-1-box3">
+                 <div><img src="immagini/in.png"></div> 
+                  <div><img src="immagini/twitter.png"></div>
+                  <div><img src="immagini/facebook.png"></div>
+                </div>
+              </div>
+              <div id="footer-blocco-conteiner-nav-2">
+                <div id="footer-blocco-conteiner-nav-2-box1">
+                  <div id="footer-blocco-conteiner-nav-2-box1-content">
+                    <span><img src="immagini/mondo.png"></span>
+                    <span><p>Italia</p></span>
+                  </div>
+                </div>
+                <div id="footer-blocco-conteiner-nav-2-box2">
+                  <div id="footer-blocco-conteiner-nav-2-box2-content1">
+                    <span><p>Informazioni Legali</p></span>
+                    <span><p>Sicurezza e Centro sulla Privacy</p></span>
+                    <span><p>Informativa sulla Privacy</p></span>
+                    <span><p>Impodtazioni Cookie</p></span>
+                    <span><p>Info annunnci</p></span>
+                    <span><p>Accessibilità</p></span>
+                  </div>
+                  <div id="footer-blocco-conteiner-nav-2-box2-content2">
+                    <span><p>© 2024 Spotify AB</p></span>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </footer>
+       </nav>
+    </body>
+    </html>
